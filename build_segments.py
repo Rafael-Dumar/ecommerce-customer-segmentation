@@ -61,20 +61,22 @@ def build_customers():
     
     
     cluster_map = {
-    3: 'high-value customers',
-    2: 'loyal customers',
-    0: 'medium-value customers',
-    1: 'at-risk customers'
+    3: 'Whales',
+    2: 'High-value',
+    4: 'loyal',
+    0: 'Regular',
+    1: 'at-risk'
     }
     
     rfm_df['Persona'] = rfm_df['Cluster'].map(cluster_map)
 
     def get_recommendation(persona):
         recommendations = {
-            'high-value customers': 'Offer exclusive deals and early access to new products.',
-            'loyal customers': 'Provide loyalty rewards and personalized discounts.',
-            'medium-value customers': 'Send targeted promotions to increase engagement.',
-            'at-risk customers': 'Re-engage with special offers and feedback requests.'
+            'Whales': 'Exclusive offers and premium services',
+            'High-value': 'Loyalty programs and personalized discounts',
+            'loyal' : 'Engagement campaigns and rewards',
+            'Regular' : 'Send targeted promotions to increase engagement',
+            'at-risk' : 'Re-engagement campaigns and special offers'
         }
         return recommendations.get(persona, 'No recommendation available.')
 
