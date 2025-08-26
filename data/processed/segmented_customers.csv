@@ -125,7 +125,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 12470,690,1,211.95,1,at-risk,Re-engagement campaigns and special offers
 12471,2,79,39963.79,2,High-value,Loyalty programs and personalized discounts
 12472,32,19,17880.59,0,Regular,Send targeted promotions to increase engagement
-12473,29,5,3938.5499999999997,0,Regular,Send targeted promotions to increase engagement
+12473,29,5,3938.55,0,Regular,Send targeted promotions to increase engagement
 12474,17,31,12424.45,0,Regular,Send targeted promotions to increase engagement
 12475,54,2,1149.64,0,Regular,Send targeted promotions to increase engagement
 12476,16,23,14115.41,0,Regular,Send targeted promotions to increase engagement
@@ -323,7 +323,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 12668,12,10,11444.68,0,Regular,Send targeted promotions to increase engagement
 12669,151,3,2744.0299999999997,0,Regular,Send targeted promotions to increase engagement
 12670,10,7,3760.29,0,Regular,Send targeted promotions to increase engagement
-12671,606,1,2622.481,1,at-risk,Re-engagement campaigns and special offers
+12671,606,1,2622.48,1,at-risk,Re-engagement campaigns and special offers
 12672,330,2,437.05,1,at-risk,Re-engagement campaigns and special offers
 12673,5,3,1230.02,0,Regular,Send targeted promotions to increase engagement
 12674,39,4,1970.6,0,Regular,Send targeted promotions to increase engagement
@@ -964,7 +964,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 13314,2,3,775.94,0,Regular,Send targeted promotions to increase engagement
 13315,689,1,310.26,1,at-risk,Re-engagement campaigns and special offers
 13316,37,10,13191.57,0,Regular,Send targeted promotions to increase engagement
-13317,66,19,6486.091,0,Regular,Send targeted promotions to increase engagement
+13317,66,19,6486.09,0,Regular,Send targeted promotions to increase engagement
 13318,1,3,640.76,0,Regular,Send targeted promotions to increase engagement
 13319,5,58,22082.5,0,Regular,Send targeted promotions to increase engagement
 13320,78,6,2228.1,0,Regular,Send targeted promotions to increase engagement
@@ -1047,10 +1047,10 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 13402,127,4,1535.13,0,Regular,Send targeted promotions to increase engagement
 13403,18,3,229.5,0,Regular,Send targeted promotions to increase engagement
 13404,1,2,252.49,0,Regular,Send targeted promotions to increase engagement
-13405,74,6,1213.811,0,Regular,Send targeted promotions to increase engagement
+13405,74,6,1213.81,0,Regular,Send targeted promotions to increase engagement
 13406,427,2,568.92,1,at-risk,Re-engagement campaigns and special offers
 13407,579,3,2244.7,1,at-risk,Re-engagement campaigns and special offers
-13408,2,106,51733.462,2,High-value,Loyalty programs and personalized discounts
+13408,2,106,51733.46,2,High-value,Loyalty programs and personalized discounts
 13410,24,9,2201.96,0,Regular,Send targeted promotions to increase engagement
 13411,107,1,213.55,0,Regular,Send targeted promotions to increase engagement
 13412,620,1,487.34999999999997,1,at-risk,Re-engagement campaigns and special offers
@@ -1222,7 +1222,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 13580,406,1,107.75,1,at-risk,Re-engagement campaigns and special offers
 13581,309,2,280.53000000000003,1,at-risk,Re-engagement campaigns and special offers
 13582,390,2,241.68,1,at-risk,Re-engagement campaigns and special offers
-13583,156,2,1445.031,0,Regular,Send targeted promotions to increase engagement
+13583,156,2,1445.03,0,Regular,Send targeted promotions to increase engagement
 13584,307,3,392.45,1,at-risk,Re-engagement campaigns and special offers
 13585,531,3,684.54,1,at-risk,Re-engagement campaigns and special offers
 13586,541,1,131.53,1,at-risk,Re-engagement campaigns and special offers
@@ -1401,7 +1401,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 13762,219,5,2472.48,0,Regular,Send targeted promotions to increase engagement
 13763,63,3,5217.4400000000005,0,Regular,Send targeted promotions to increase engagement
 13764,71,6,2953.26,0,Regular,Send targeted promotions to increase engagement
-13765,653,1,352.821,1,at-risk,Re-engagement campaigns and special offers
+13765,653,1,352.82,1,at-risk,Re-engagement campaigns and special offers
 13766,495,1,190.35,1,at-risk,Re-engagement campaigns and special offers
 13767,2,73,35540.53,2,High-value,Loyalty programs and personalized discounts
 13768,727,2,875.97,1,at-risk,Re-engagement campaigns and special offers
@@ -1587,7 +1587,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 13949,3,6,2427.32,0,Regular,Send targeted promotions to increase engagement
 13950,11,4,745.06,0,Regular,Send targeted promotions to increase engagement
 13951,176,3,674.45,0,Regular,Send targeted promotions to increase engagement
-13952,218,14,12823.521,0,Regular,Send targeted promotions to increase engagement
+13952,218,14,12823.52,0,Regular,Send targeted promotions to increase engagement
 13953,7,12,6640.68,0,Regular,Send targeted promotions to increase engagement
 13954,2,2,439.92,0,Regular,Send targeted promotions to increase engagement
 13955,154,3,545.17,0,Regular,Send targeted promotions to increase engagement
@@ -1883,7 +1883,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 14246,111,3,1474.06,0,Regular,Send targeted promotions to increase engagement
 14247,278,5,772.66,1,at-risk,Re-engagement campaigns and special offers
 14248,318,3,1032.95,1,at-risk,Re-engagement campaigns and special offers
-14249,411,12,5625.461,1,at-risk,Re-engagement campaigns and special offers
+14249,411,12,5625.46,1,at-risk,Re-engagement campaigns and special offers
 14250,7,3,1904.05,0,Regular,Send targeted promotions to increase engagement
 14251,2,5,2879.7000000000003,0,Regular,Send targeted promotions to increase engagement
 14252,381,1,350.99,1,at-risk,Re-engagement campaigns and special offers
@@ -2091,7 +2091,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 14456,5,9,3062.4,0,Regular,Send targeted promotions to increase engagement
 14457,311,1,113.64,1,at-risk,Re-engagement campaigns and special offers
 14458,381,1,237.42,1,at-risk,Re-engagement campaigns and special offers
-14459,155,2,5375.741,0,Regular,Send targeted promotions to increase engagement
+14459,155,2,5375.74,0,Regular,Send targeted promotions to increase engagement
 14460,110,9,1093.5,0,Regular,Send targeted promotions to increase engagement
 14461,148,13,6713.5,0,Regular,Send targeted promotions to increase engagement
 14462,66,12,2270.01,0,Regular,Send targeted promotions to increase engagement
@@ -2487,7 +2487,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 14854,78,11,4322.86,0,Regular,Send targeted promotions to increase engagement
 14855,119,7,6520.3,0,Regular,Send targeted promotions to increase engagement
 14856,36,3,1311.3799999999999,0,Regular,Send targeted promotions to increase engagement
-14857,60,7,3651.851,0,Regular,Send targeted promotions to increase engagement
+14857,60,7,3651.85,0,Regular,Send targeted promotions to increase engagement
 14858,506,1,180.75,1,at-risk,Re-engagement campaigns and special offers
 14859,13,5,1705.64,0,Regular,Send targeted promotions to increase engagement
 14860,19,1,170.32,0,Regular,Send targeted promotions to increase engagement
@@ -2808,7 +2808,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 15179,18,13,7491.92,0,Regular,Send targeted promotions to increase engagement
 15180,367,3,904.4300000000001,1,at-risk,Re-engagement campaigns and special offers
 15181,66,5,1200.2,0,Regular,Send targeted promotions to increase engagement
-15182,154,11,2998.952,0,Regular,Send targeted promotions to increase engagement
+15182,154,11,2998.9500000000003,0,Regular,Send targeted promotions to increase engagement
 15183,548,3,639.93,1,at-risk,Re-engagement campaigns and special offers
 15184,29,4,689.95,0,Regular,Send targeted promotions to increase engagement
 15185,70,1,310.62,0,Regular,Send targeted promotions to increase engagement
@@ -3242,7 +3242,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 15615,10,47,21373.97,0,Regular,Send targeted promotions to increase engagement
 15616,438,1,317.11,1,at-risk,Re-engagement campaigns and special offers
 15617,396,3,828.5500000000001,1,at-risk,Re-engagement campaigns and special offers
-15618,33,4,776.851,0,Regular,Send targeted promotions to increase engagement
+15618,33,4,776.85,0,Regular,Send targeted promotions to increase engagement
 15619,11,1,336.40000000000003,0,Regular,Send targeted promotions to increase engagement
 15620,57,4,1942.36,0,Regular,Send targeted promotions to increase engagement
 15621,4,4,1293.03,0,Regular,Send targeted promotions to increase engagement
@@ -3374,7 +3374,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 15747,13,9,2562.61,0,Regular,Send targeted promotions to increase engagement
 15748,40,3,614.7600000000001,0,Regular,Send targeted promotions to increase engagement
 15749,235,3,44534.3,0,Regular,Send targeted promotions to increase engagement
-15750,3,18,6797.191,0,Regular,Send targeted promotions to increase engagement
+15750,3,18,6797.1900000000005,0,Regular,Send targeted promotions to increase engagement
 15751,461,11,1380.44,1,at-risk,Re-engagement campaigns and special offers
 15752,40,9,4207.54,0,Regular,Send targeted promotions to increase engagement
 15753,305,1,79.2,1,at-risk,Re-engagement campaigns and special offers
@@ -3816,7 +3816,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 16195,723,1,323.25,1,at-risk,Re-engagement campaigns and special offers
 16196,489,1,93.3,1,at-risk,Re-engagement campaigns and special offers
 16197,469,9,2016.71,1,at-risk,Re-engagement campaigns and special offers
-16198,75,2,1030.0410000000002,0,Regular,Send targeted promotions to increase engagement
+16198,75,2,1030.04,0,Regular,Send targeted promotions to increase engagement
 16199,392,7,942.75,1,at-risk,Re-engagement campaigns and special offers
 16200,4,12,5643.45,0,Regular,Send targeted promotions to increase engagement
 16201,3,5,2112.12,0,Regular,Send targeted promotions to increase engagement
@@ -4317,7 +4317,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 16701,9,26,9916.73,0,Regular,Send targeted promotions to increase engagement
 16702,415,4,1110.83,1,at-risk,Re-engagement campaigns and special offers
 16704,618,2,695.66,1,at-risk,Re-engagement campaigns and special offers
-16705,1,42,43515.051,0,Regular,Send targeted promotions to increase engagement
+16705,1,42,43515.05,0,Regular,Send targeted promotions to increase engagement
 16706,37,3,531.35,0,Regular,Send targeted promotions to increase engagement
 16707,400,4,551.11,1,at-risk,Re-engagement campaigns and special offers
 16708,46,1,656.63,0,Regular,Send targeted promotions to increase engagement
@@ -4955,7 +4955,7 @@ Customer ID,Recency,Frequency,Monetary,Cluster,Persona,Recommended_Action
 17347,86,1,228.96,0,Regular,Send targeted promotions to increase engagement
 17348,15,9,2476.41,0,Regular,Send targeted promotions to increase engagement
 17349,179,5,852.25,0,Regular,Send targeted promotions to increase engagement
-17350,8,7,1906.041,0,Regular,Send targeted promotions to increase engagement
+17350,8,7,1906.04,0,Regular,Send targeted promotions to increase engagement
 17351,36,12,1988.23,0,Regular,Send targeted promotions to increase engagement
 17352,696,1,36.25,1,at-risk,Re-engagement campaigns and special offers
 17353,129,4,3242.0,0,Regular,Send targeted promotions to increase engagement

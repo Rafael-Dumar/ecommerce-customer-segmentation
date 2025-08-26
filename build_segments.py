@@ -3,43 +3,50 @@ import datetime as dt
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 import joblib
+from sqlalchemy import create_engine
+import os
+from dotenv import load_dotenv
 
-
+load_dotenv()
 
 def build_customers():
     """
     Build a customer-level dataset from the online retail data.
     """
+    #connecting to database
+    DB_url = os.getenv("DB_URL")
+    engine = create_engine(DB_url)
+
     print("loading and preprocessing data...")
     try:
-        df = pd.read_csv('data/raw/online_retail_II.csv', encoding='unicode_escape', dtype={'CustomerID': str})
+        df = pd.read_sql("SELECT * FROM raw_transactions", engine)
     except FileNotFoundError:
         print("Error: File 'online_retail_II.csv' not found.")
         return
     
-
+    
     # Data Cleaning
     df_clean = df.copy()
     # Convert 'InvoiceDate' to datetime
-    df_clean['InvoiceDate'] = pd.to_datetime(df_clean['InvoiceDate'], errors='coerce')
+    df_clean['invoicedate'] = pd.to_datetime(df_clean['invoicedate'], errors='coerce')
     # remove lines without 'Customer ID'
     df_clean = df_clean.dropna(subset=['Customer ID'])
     # remove transactions with negative or zero quantity
-    df_clean = df_clean[df_clean['Quantity'] > 0]
+    df_clean = df_clean[df_clean['quantity'] > 0]
     #transform 'Customer ID' to int
     df_clean['Customer ID'] = df_clean['Customer ID'].astype(float).astype(int)
     # calculate 'TotalPrice'
-    df_clean['TotalPrice'] = df_clean['Quantity'] * df_clean['Price']
+    df_clean['totalprice'] = df_clean['quantity'] * df_clean['price']
 
     # RFM Metrics
     print("calculating RFM metrics...")
     # snapshot date is one day after the last invoice date
-    snapshot_date = df_clean['InvoiceDate'].max() + dt.timedelta(days=1)
+    snapshot_date = df_clean['invoicedate'].max() + dt.timedelta(days=1)
     # calculate Recency, Frequency, Monetary
     rfm_df = df_clean.groupby('Customer ID').agg(
-        Recency=('InvoiceDate', lambda date: (snapshot_date - date.max()).days),
-        Frequency=('Invoice', 'nunique'),
-        Monetary=('TotalPrice', 'sum')
+        Recency=('invoicedate', lambda date: (snapshot_date - date.max()).days),
+        Frequency=('invoice', 'nunique'),
+        Monetary=('totalprice', 'sum')
     ).reset_index()
 
     # K-Means Clustering
@@ -87,7 +94,7 @@ def build_customers():
     
     joblib.dump(scaler, 'models/rfm_scaler.pkl')
     joblib.dump(kmeans, 'models/kmeans_model.pkl')
-    rfm_df.to_csv('data/processed/segmented_customers.csv', index=False)
+    rfm_df.to_sql('customer_segments', engine, if_exists='replace', index=False)
     
     print("\n Process completed successfully.")
     print("artifacts saved in 'models/' and 'data/processed/' directories.")
