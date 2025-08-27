@@ -1,5 +1,7 @@
 # E-commerce Customer Segmentation Platform
 
+## link to see:
+https://ecommerce-customer-segmentation-dumar.streamlit.app
 ## 📖 Project Description
 This project develops an end-to-end Machine Learning pipeline to segment customers of an online retail store based on their purchasing behavior. The goal is to move beyond simple analytics and create actionable customer personas using Unsupervised Learning, culminating in an interactive dashboard for strategic business insights.
 
