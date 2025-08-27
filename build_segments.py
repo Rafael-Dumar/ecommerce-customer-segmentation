@@ -57,7 +57,7 @@ def build_customers():
     
     
     # using k=4 for segmentation
-    kmeans = KMeans(n_clusters=4, random_state=42, n_init='auto')
+    kmeans = KMeans(n_clusters=5, random_state=42, n_init='auto')
     rfm_df['Cluster'] = kmeans.fit_predict(rfm_scaled)
 
     # Defining Personas and Recommended Actions
