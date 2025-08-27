@@ -33,13 +33,13 @@ st.subheader("Client Distribution by Segment")
 persona_counts = df['Persona'].value_counts().sort_values(ascending=False)
 fig_bar = px.bar(persona_counts, x=persona_counts.index, y=persona_counts.values, 
                 labels={'x':'Persona', 'y':'Number of Clients'}, text=persona_counts.values)
-st.plotly_chart(fig_bar, width='Stretch')
+st.plotly_chart(fig_bar, width='stretch')
     
 # table
 st.subheader("Average RFM Metrics by Segment")
 st.markdown("The table below shows the average Recency, Frequency, and Monetary values for each customer segment.")
 cluster_analysis = df.groupby('Persona')[['Recency', 'Frequency', 'Monetary']].mean().round(2).sort_values(by='Monetary', ascending=False).reset_index()
-st.dataframe(cluster_analysis, width='Stretch')
+st.dataframe(cluster_analysis, width='stretch')
     
 #bubble chart
 st.header("RFM Metrics Distribution")
