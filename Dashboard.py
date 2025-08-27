@@ -59,7 +59,7 @@ with col1:
         labels={'Persona':'', 'Recency':'Recency Mean (Days)'},
         text_auto=True
     ).update_traces(textposition='outside')
-    st.plotly_chart(fig_recency, width='Stretch')
+    st.plotly_chart(fig_recency, width='stretch')
 
 with col2:
     st.subheader("Frequency Mean")
@@ -71,7 +71,7 @@ with col2:
         text_auto=True,
         labels={'Persona':'', 'Frequency':'Nº of Purchases'}
     ).update_traces(textposition='outside')
-    st.plotly_chart(fig_freq, width='Stretch')
+    st.plotly_chart(fig_freq, width='stretch')
 
 with col3:
     st.subheader("Monetary Mean")
@@ -83,7 +83,7 @@ with col3:
         text_auto='.2s', 
         labels={'Persona':'', 'Monetary':'Average Spend ($)'}
     ).update_traces(textposition='outside')
-    st.plotly_chart(fig_monetary, width='Stretch')
+    st.plotly_chart(fig_monetary, width='stretch')
 
 st.subheader("3D Visualization of Customer Segments")
 st.markdown("The 3D scatter plot below visualizes customer segments based on their RFM metrics. Each point represents a customer, colored by their assigned persona.")
@@ -104,6 +104,6 @@ fig_3d.update_layout(
         zaxis_title='Monetary value'
     )
 )
-st.plotly_chart(fig_3d, width='Stretch')
+st.plotly_chart(fig_3d, width='stretch')
 
 

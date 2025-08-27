@@ -83,5 +83,5 @@ if st.button("Analyze Client"):
 
     st.markdown("### Segment Characteristics:")
     segment_info = cluster_analysis[cluster_analysis['Cluster'] == cluster_prediction]
-    st.dataframe(segment_info, width='Stretch')
+    st.dataframe(segment_info, width='stretch')
     

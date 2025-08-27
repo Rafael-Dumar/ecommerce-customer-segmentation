@@ -35,7 +35,7 @@ filtered_df = df[df['Persona'] == selected_persona]
 # display filtered dataframe
 st.write(f'Found {len(filtered_df)} customers in the {selected_persona}, segment')
 # display dataframe
-st.dataframe(filtered_df.copy(), width='Stretch')
+st.dataframe(filtered_df.copy(), width='stretch')
 
 # download button to download filtered dataframe as csv
 @st.cache_data
