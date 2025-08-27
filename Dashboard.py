@@ -33,13 +33,13 @@ st.subheader("Client Distribution by Segment")
 persona_counts = df['Persona'].value_counts().sort_values(ascending=False)
 fig_bar = px.bar(persona_counts, x=persona_counts.index, y=persona_counts.values, 
                 labels={'x':'Persona', 'y':'Number of Clients'}, text=persona_counts.values)
-st.plotly_chart(fig_bar, use_container_width=True)
+st.plotly_chart(fig_bar, width='Stretch')
     
 # table
 st.subheader("Average RFM Metrics by Segment")
 st.markdown("The table below shows the average Recency, Frequency, and Monetary values for each customer segment.")
 cluster_analysis = df.groupby('Persona')[['Recency', 'Frequency', 'Monetary']].mean().round(2).sort_values(by='Monetary', ascending=False).reset_index()
-st.dataframe(cluster_analysis, use_container_width=True)
+st.dataframe(cluster_analysis, width='Stretch')
     
 #bubble chart
 st.header("RFM Metrics Distribution")
@@ -59,7 +59,7 @@ with col1:
         labels={'Persona':'', 'Recency':'Recency Mean (Days)'},
         text_auto=True
     ).update_traces(textposition='outside')
-    st.plotly_chart(fig_recency, use_container_width=True)
+    st.plotly_chart(fig_recency, width='Stretch')
 
 with col2:
     st.subheader("Frequency Mean")
@@ -71,7 +71,7 @@ with col2:
         text_auto=True,
         labels={'Persona':'', 'Frequency':'Nº of Purchases'}
     ).update_traces(textposition='outside')
-    st.plotly_chart(fig_freq, use_container_width=True)
+    st.plotly_chart(fig_freq, width='Stretch')
 
 with col3:
     st.subheader("Monetary Mean")
@@ -83,7 +83,7 @@ with col3:
         text_auto='.2s', 
         labels={'Persona':'', 'Monetary':'Average Spend ($)'}
     ).update_traces(textposition='outside')
-    st.plotly_chart(fig_monetary, use_container_width=True)
+    st.plotly_chart(fig_monetary, width='Stretch')
 
 st.subheader("3D Visualization of Customer Segments")
 st.markdown("The 3D scatter plot below visualizes customer segments based on their RFM metrics. Each point represents a customer, colored by their assigned persona.")
@@ -104,6 +104,6 @@ fig_3d.update_layout(
         zaxis_title='Monetary value'
     )
 )
-st.plotly_chart(fig_3d, use_container_width=True)
+st.plotly_chart(fig_3d, width='Stretch')
 
 

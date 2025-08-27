@@ -28,24 +28,24 @@ def build_customers():
     # Data Cleaning
     df_clean = df.copy()
     # Convert 'InvoiceDate' to datetime
-    df_clean['invoicedate'] = pd.to_datetime(df_clean['invoicedate'], errors='coerce')
+    df_clean['InvoiceDate'] = pd.to_datetime(df_clean['InvoiceDate'], errors='coerce')
     # remove lines without 'Customer ID'
     df_clean = df_clean.dropna(subset=['Customer ID'])
     # remove transactions with negative or zero quantity
-    df_clean = df_clean[df_clean['quantity'] > 0]
+    df_clean = df_clean[df_clean['Quantity'] > 0]
     #transform 'Customer ID' to int
-    df_clean['Customer ID'] = df_clean['Customer ID'].astype(float).astype(int)
+    df_clean['Customer ID'] = df_clean['Customer ID'].astype(int)
     # calculate 'TotalPrice'
-    df_clean['totalprice'] = df_clean['quantity'] * df_clean['price']
+    df_clean['totalprice'] = df_clean['Quantity'] * df_clean['Price']
 
     # RFM Metrics
     print("calculating RFM metrics...")
     # snapshot date is one day after the last invoice date
-    snapshot_date = df_clean['invoicedate'].max() + dt.timedelta(days=1)
+    snapshot_date = df_clean['InvoiceDate'].max() + dt.timedelta(days=1)
     # calculate Recency, Frequency, Monetary
     rfm_df = df_clean.groupby('Customer ID').agg(
-        Recency=('invoicedate', lambda date: (snapshot_date - date.max()).days),
-        Frequency=('invoice', 'nunique'),
+        Recency=('InvoiceDate', lambda date: (snapshot_date - date.max()).days),
+        Frequency=('Invoice', 'nunique'),
         Monetary=('totalprice', 'sum')
     ).reset_index()
 
